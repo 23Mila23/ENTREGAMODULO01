@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.montserrat-regular{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.montserrat-bold {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal; 
+  }
+
+* {
+    box-sizing: border-box;
+}
+ 
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    font-size: 1rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin:2px;
+    position: fixed;
+    width: 100%;
+    border-bottom: #212429 solid 0.5px;
+    
+}
+
+.itemnav{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #212429;
+}
+
+.imgnav{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.rightitems{
+    display: flex;
+    text-decoration: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #212429;
+}
+.container {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr,1fr));
+    gap:1rem;
+    padding: 1rem;
+    
+
+}
+.container .divnuevascolecciones:first-child {
+    grid-column: span 3;
+}
+.divnuevascolecciones{
+    background-color: #ffffff;
+    padding: 1rem;
+    font-size: 32px;
+   
+}
+.div {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.imgdiv{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.ropayprecio {
+    display: flex;
+    align-items: flex-end;
+    gap: 7rem;
+    justify-content: center;
+    background-color: #ffffff;
+    padding: 1rem;
+    
+}
+
+
+footer{
+    background-color:#212429;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:#212429;
+    color: #ffffff;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+
+
+.footerimg{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 45%;
+    background-color: #ffffff;
+}
+
+.hr{
+    display: none;
+}
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    .divnuevascolecciones{
+        text-align: center;
+    }
+
+    .rightitems{
+        display: none;
+    }
+
+
+    .container .div {
+        grid-column: span 3;
+    }
+
+    .ropayprecio {
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+
+    .footeritems{
+        flex-direction: column;
+    
+    }
+
+    .hr{
+        display: block;
+        width: 100%;
+    }
+        
+}
